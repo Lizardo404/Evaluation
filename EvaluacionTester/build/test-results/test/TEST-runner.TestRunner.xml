@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner.TestRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-06-17T06:53:57.262Z" hostname="LI0ROJO" time="0.009">
+  <properties/>
+  <testcase name="initializationError" classname="runner.TestRunner" time="0.009">
+    <failure message="io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/rafae/Intelliji/javaTesting/src/test/resources/features/Playground.feature&#10;(12:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And search &lt;topics&gt; on textbox'&#10;(30:2): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Given Add &lt;number&gt; elements'&#10;(37:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Scenario Outline: Open checkbox page'&#10;(38:6): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'When the user navigate to Testing Playground'&#10;(39:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And search &lt;topics&gt; on textbox'&#10;(40:6): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Then open first option'&#10;(42:6): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Then click on checkbox icons'&#10;(43:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And return to main page'&#10;(44:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Examples:'&#10;(45:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got '| topics     |'&#10;(46:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got '| Checkbox   |'" type="io.cucumber.core.gherkin.FeatureParserException">io.cucumber.core.gherkin.FeatureParserException: Failed to parse resource at: file:///C:/Users/rafae/Intelliji/javaTesting/src/test/resources/features/Playground.feature
+(12:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And search &lt;topics&gt; on textbox'
+(30:2): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Given Add &lt;number&gt; elements'
+(37:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Scenario Outline: Open checkbox page'
+(38:6): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'When the user navigate to Testing Playground'
+(39:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And search &lt;topics&gt; on textbox'
+(40:6): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Then open first option'
+(42:6): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Then click on checkbox icons'
+(43:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And return to main page'
+(44:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Examples:'
+(45:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got '| topics     |'
+(46:7): expected: #TagLine, #RuleLine, #Comment, #Empty, got '| Checkbox   |'
+	at app//io.cucumber.core.gherkin.messages.GherkinMessagesFeatureParser.parse(GherkinMessagesFeatureParser.java:56)
+	at app//io.cucumber.core.feature.FeatureParser.parseResource(FeatureParser.java:46)
+	at java.base@23.0.2/java.util.function.BiFunction.lambda$andThen$0(BiFunction.java:70)
+	at app//io.cucumber.core.resource.ResourceScanner.lambda$processResource$1(ResourceScanner.java:79)
+	at app//io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:75)
+	at app//io.cucumber.core.resource.PathScanner$ResourceFileVisitor.visitFile(PathScanner.java:60)
+	at java.base@23.0.2/java.nio.file.Files.walkFileTree(Files.java:2810)
+	at app//io.cucumber.core.resource.PathScanner.findResourcesForPath(PathScanner.java:53)
+	at app//io.cucumber.core.resource.PathScanner.findResourcesForUri(PathScanner.java:31)
+	at app//io.cucumber.core.resource.ResourceScanner.findResourcesForUri(ResourceScanner.java:61)
+	at app//io.cucumber.core.resource.ResourceScanner.scanForResourcesUri(ResourceScanner.java:134)
+	at app//io.cucumber.core.runtime.FeaturePathFeatureSupplier.loadFeatures(FeaturePathFeatureSupplier.java:62)
+	at app//io.cucumber.core.runtime.FeaturePathFeatureSupplier.get(FeaturePathFeatureSupplier.java:45)
+	at app//io.cucumber.junit.Cucumber.&lt;init&gt;(Cucumber.java:159)
+	at java.base@23.0.2/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@23.0.2/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base@23.0.2/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at app//org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+	at app//org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at app//org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+	at app//org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+	at app//org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
+	at app//org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:77)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:54)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:53)
+	at java.base@23.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@23.0.2/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:183)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
